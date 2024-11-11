@@ -1,1 +1,93 @@
 <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito</title>
+    <link rel="stylesheet" href= "assets/css/home.css">
+    <script src="https://kit.fontawesome.com/573891a313.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER-->
+    <header>
+        <nav>
+            <div class="logo"> &#123;ノブ&#125; </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">CV</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#scrivimi">Scrivimi </a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1> &#171; HELLO WORLD! &#187; </br>sono Pierpaolo aka <span class="highlight">NOBU 	&#123;ノブ&#125;</span></h1>
+            <h2> &#60; Junior Front-End Developer	&#47; &#62;</h2>
+        </div>
+    </section>
+
+    <!-- Sezione Progetti -->
+    <section id="progetti" class="progetti">
+        <h2>I MIEI PROGETTI</h2>
+        <div class="progetti-grid">
+            <div class="progetto-card">
+                <img src="placeholder.jpg" alt="Progetto 1">
+                <h3>Progetto 1</h3>
+                <p>Descrizione del progetto</p>
+            </div>
+            
+        </div>
+    </section>
+   
+      <!-- Sezione FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="contatti-scritta">CONTATTI</div>
+                <div class="email"><i class="fa-solid fa-envelope"></i>  pierpaolo.nobu@gmail.com </div>
+                <div class="footer-social" id="contatti">
+                    <a href="https://github.com/pierpaolomarrone" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pierpaolo-nobu-b6b937176/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/pier_nobu/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+
+              <a href="/" class="footer-logo"> &#123;ノブ&#125; </a>
+                <p class="footer-copyright">©2024 NOBU &#123;ノブ&#125;  All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Script per Hamburger-menù -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Chiudi il menu quando si clicca su un link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
