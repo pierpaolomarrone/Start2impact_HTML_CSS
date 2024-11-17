@@ -1,0 +1,154 @@
+.cv-container {
+    max-width: 1200px;
+    margin:0 auto 50px;
+    padding: 200px;
+    background-color: #112240;
+    color: #ccd6f6;
+}
+
+.cv-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background-color: #0a192f;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.cv-photo {
+    flex: 0 0 300px;
+}
+
+.cv-photo img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.cv-info {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+.cv-info h1 {
+  color: #64ffda;
+  padding-bottom: 30px;
+  font-size: 3rem;
+}
+
+.obiettivi h2 {
+  color: #64ffda;
+  padding-top: 30px;
+}
+
+.contatti-cv {
+    background-color: #0a192f;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.contatti-cv h3 {
+    color: #64ffda;
+    margin-bottom: 1rem;
+}
+
+.contatti-cv p {
+    margin-bottom: 0.5rem;
+}
+
+.contatti-cv i {
+    margin-right: 0.5rem;
+}
+
+.cv-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #0a192f;
+    border-radius: 4px;
+}
+
+.cv-info h2,
+.cv-section h2 {
+    color: #64ffda;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #1d2d4f;
+    padding-bottom: 0.5rem;
+}
+
+.esperienza, 
+.formazione {
+    margin-bottom: 2rem;
+}
+
+.esperienza h3, 
+.formazione h3 {
+    color: #ccd6f6;
+    margin-bottom: 0.5rem;
+}
+
+.formazione span {
+  color: #64ffda;
+}
+
+.data {
+    color: #64ffda;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.competenze {
+    margin-bottom: 2rem;
+}
+
+.competenze h3 {
+    color: #ccd6f6;
+    margin-bottom: 1rem;
+}
+
+.obiettivi ul,
+.competenze ul,
+.lingue ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.obiettivi ul li, 
+.competenze ul li, 
+.lingue ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.obiettivi ul li:before,
+.competenze ul li:before,
+.lingue ul li:before
+{
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #64ffda;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cv-header {
+        flex-direction: column;
+    }
+
+    .cv-photo {
+        flex: 0 0 auto;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .cv-info {
+        text-align: center;
+    }
+
+    .cv-section {
+        padding: 1rem;
+    }
+}
