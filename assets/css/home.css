@@ -1,21 +1,20 @@
-
-/* Stile Header e Navigazione */
-
+/* Header e Navbar */
 header {
   position: fixed;
   width: 100%;
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(11, 27, 50, 0.85);
   backdrop-filter: blur(10px);
+  z-index: 2;
 }
 
 nav {
-  max-width: 1200px;
+  width: 100%;
+  max-width:1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  position: relative;
+  padding: 1.5rem 4rem;
 }
 
 .logo {
@@ -29,6 +28,7 @@ nav {
   list-style: none;
   gap: 2rem;
   font-size: 25px;
+  
 }
 
 .nav-links a {
@@ -62,14 +62,14 @@ nav {
 }
 
 .foto-profilo {
-  max-width: 400px;  /* Dimensione fissa invece di percentuale */
+  max-width: 400px;  
   height: auto;
   margin-bottom: 0;  
 }
 
-.hero-text {  /* Nuovo contenitore per il testo */
-  text-align: left;  /* Allineamento del testo a sinistra */
-  flex: 1;  /* Permette al testo di occupare lo spazio rimanente */
+.hero-text {  
+  text-align: left;  
+  flex: 1;  
 }
 
 .hero h1 {
@@ -89,7 +89,7 @@ nav {
   color: #64ffda;
 }
 
-/* Stile Sezione Progetti */
+/*Progetti */
 .progetti {
   padding: 100px 20px;
   max-width: 1200px;
@@ -108,30 +108,30 @@ nav {
   gap: 2rem;
 }
 
-.progetto-card {
+.progetto-container {
   background-color: #112240;
   padding: 20px;
   border-radius: 4px;
   transition: transform 0.3s;
 }
 
-.progetto-card:hover {
+.progetto-container:hover {
   transform: translateY(-5px);
 }
 
-.progetto-card img {
+.progetto-container img {
   width: 100%;
   border-radius: 4px;
   margin-bottom: 15px;
 }
 
-.progetto-card h3 {
+.progetto-container h3 {
   color: #ccd6f6;
   margin-bottom: 10px;
 }
 
 
-/* Stile Footer */
+/* Footer */
 footer {
   padding: 2rem 0;
   background-color: #0a192f;
@@ -201,7 +201,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Stile hamburger */
+/*hamburger menù */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -219,6 +219,7 @@ footer {
 
 
 /* Media Queries */
+
 /* hero-section */
 @media (max-width: 768px) {
   .hero-content {
@@ -260,7 +261,7 @@ footer {
     right: -100%;
     height: 100vh;
     width: 100%;
-    background-color:#1d4786;;
+    background-color:#0a192f;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -287,6 +288,3 @@ footer {
 }
 
 }
-
-
-

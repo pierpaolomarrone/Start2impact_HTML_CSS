@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Sito</title>
-    <link rel="stylesheet" href= "assets/css/home.css">
+    <link rel="stylesheet" href= "../assets/css/style.css">
     <script src="https://kit.fontawesome.com/573891a313.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +21,41 @@
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#progetti">Progetti</a></li>
+                <li><a href="../cv/cv.html">CV</a></li>
                 <li><a href="#scrivimi">Scrivimi </a></li>
                 <li><a href="#contatti">Contatti</a></li>
             </ul>
         </nav>
     </header>
-
+<main class="first-form-container">
+    <section class="form-section" id="scrivimi">
+      <div class="form-container">
+          <h2>SCRIVIMI</h2>
+          <h3>Compila il form per contattarmi.<br>Ti risponderò il prima possibile!</h3>
   
-   
+          <form action="dati.php" method="post">
+              <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" name="nome" id="nome" required>
+              </div>
+  
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required>
+              </div>
+  
+              <div class="form-group">
+                  <label for="messaggio">Messaggio</label>
+                  <textarea name="messaggio" id="messaggio" rows="6"></textarea>
+              </div>
+  
+              <button type="submit" class="submit-btn">Invia messaggio</button>
+          </form>
+      </div>
+  </section>
+</main>
       <!-- Sezione FOOTER -->
     <footer>
         <div class="footer-content">
@@ -72,6 +96,5 @@
     </script>
 </body>
 </html>
-
 
 
